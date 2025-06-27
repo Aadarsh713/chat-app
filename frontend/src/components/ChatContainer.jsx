@@ -13,11 +13,6 @@ const ChatContainer = () => {
 	const { authUser } = useAuthStore();
 	const messageEndRef = useRef(null);
 
-	useEffect(() => {
-		if (messages.length > 0) {
-			console.log("Messages fetched:", messages);
-		}
-	}, [messages]);
 
 	useEffect(() => {
 		getMessages(selectedUser._id);
