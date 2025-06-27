@@ -13,6 +13,7 @@ dotenv.config(); // use to read env file
 
 
 const PORT = process.env.PORT;
+const __dirname = path.resolve();
 
 // app.use(express.json()); 
 // Allow larger JSON and URL‑encoded payloads (e.g., 10MB)
